@@ -34,10 +34,10 @@ selector = etree.HTML(driver.page_source)
 for i in range(1):
     for j in range(60):
         # 名称、价格、好评率、店铺名称。
-        name = selector.xpath("//p[@class='proName clearfix']/a/text()")[j+1]
-        price = selector.xpath(".//p[@class='proPrice']/em/text()")[j+1]
-        store = selector.xpath(".//span[@class='shop_text']/text()")[j+1]
-        judge = selector.xpath(".//p[@class='proPrice']/span[@class='positiveRatio']/text()")[j+1]
+        name = selector.xpath("//p[@class='proName clearfix']/a/text()")[j]
+        price = selector.xpath(".//p[@class='proPrice']/em/text()")[j]
+        store = selector.xpath(".//span[@class='shop_text']/text()")[j]
+        judge = selector.xpath(".//p[@class='proPrice']/span[@class='positiveRatio']/text()")[j]
         print(name)
         print(price)
         print(store)
